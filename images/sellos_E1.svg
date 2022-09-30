@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74.224" height="72.82" viewBox="0 0 74.224 72.82">
+  <g id="sellos_E1" transform="translate(1.576 1.604)">
+    <g id="Grupo_5439" data-name="Grupo 5439" transform="translate(0 0)">
+      <circle id="Elipse_206" data-name="Elipse 206" cx="35.526" cy="35.526" r="35.526" transform="translate(0)" fill="#e6e7e8"/>
+      <path id="Trazado_4590" data-name="Trazado 4590" d="M109.364,151.341a32.115,32.115,0,1,1,43.145,16.224" transform="translate(-103.276 -103.005)" fill="none" stroke="#e47739" stroke-linecap="round" stroke-miterlimit="10" stroke-width="10"/>
+    </g>
+    <g id="Grupo_5430" data-name="Grupo 5430" transform="translate(22.5 43.171)">
+      <g id="Grupo_5429" data-name="Grupo 5429">
+        <g id="Grupo_5427" data-name="Grupo 5427" transform="translate(0 0.523)">
+          <rect id="Rectángulo_2666" data-name="Rectángulo 2666" width="25.234" height="0.286" fill="#e47739"/>
+        </g>
+        <g id="Grupo_5428" data-name="Grupo 5428" transform="translate(11.941)">
+          <path id="Trazado_4593" data-name="Trazado 4593" d="M422.042,510.271a.671.671,0,1,1-.671-.671A.678.678,0,0,1,422.042,510.271Z" transform="translate(-420.7 -509.6)" fill="#e47739"/>
+        </g>
+      </g>
+    </g>
+    <g id="Grupo_5426" data-name="Grupo 5426" transform="translate(23.408 14.803)">
+      <text id="NORTIC" transform="translate(0 4)" fill="#e47739" font-size="4" font-family="Poppins-ExtraBold, Poppins" font-weight="800"><tspan x="0" y="0">NORTIC</tspan></text>
+      <g id="Grupo_5425" data-name="Grupo 5425" transform="translate(1.371 9.51)">
+        <g id="Grupo_5424" data-name="Grupo 5424">
+          <path id="Trazado_4591" data-name="Trazado 4591" d="M333.28,321.751h-5.921v2.674h5.23v3.464h-5.23v2.951h5.921v3.651H322.8V318.1h10.48Z" transform="translate(-322.8 -318.1)" fill="#e47739"/>
+          <path id="Trazado_4592" data-name="Trazado 4592" d="M454.509,322.225H452.2V318.1h6.9v16.372h-4.589V322.225Z" transform="translate(-439.43 -318.1)" fill="#e47739"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
