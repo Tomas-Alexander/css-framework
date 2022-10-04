@@ -361,8 +361,6 @@ body {
 }
 
 .footer-nortic{
-    display: flex;
-    justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #CCCCCC;
     padding: 30px 0;
@@ -461,6 +459,11 @@ body {
 .footer-light .footer-bottom-right .follow-icons a {
     color: white;
 }
+
+.footer-nortic .certifications{
+    
+}
+
 @media screen and (max-width: 768px) {
     .footer-light .footer-top .row > div {
         margin-top: 30px;
@@ -485,15 +488,15 @@ body {
 
 }
 
-@media (max-width:961px)  {
-    .footer-nortic::before{
-        content: "Certificaciones obtenidas";
+@media (min-width:769px)  {
+    .footer-nortic a{
+        /* display: none; */
     }
 }
 
 /***************** Tarjetas Hover *****************/
 
-.card::before{
+.card.top::before{
     position:absolute;
     top: 0;
     left: 0;
@@ -613,9 +616,6 @@ body {
 /***************** Slider *****************/
 
 .slider {
-    display: flex;
-}
-.slide {
     border-radius: 12px;
     border: 1px solid #003670;
     width: 25%;
@@ -627,7 +627,7 @@ body {
     max-height: 454px;
     cursor: pointer;
 }
-.slide:nth-child(2) {
+.slider:nth-child(2) {
     margin: 0 26px;
 }
 .slide-icon {
@@ -645,7 +645,7 @@ body {
     line-height: 26px;
     position: relative;
 }
-.slide.active {
+.slider.active {
     background-color: #003670;
     padding: 160px 48px 96px;
     color: #fff;
@@ -653,7 +653,7 @@ body {
     text-align: left;
     box-shadow: 15px 15px 30px #001429 24;
 }
-.slide.active .slide-text {
+.slider.active .slide-text {
     opacity: 0.7;
     display: block;
     animation: slideUp 700ms cubic-bezier(0.47, 0, 0.75, 0.72) 75ms normal backwards;
@@ -693,16 +693,75 @@ body {
 }
 
 @media screen and (max-width:1024px) {
-    .slider {
+    .slid {
         flex-direction: column;
         gap: 15px;
     }
 
-    .slide {
+    .slider {
         width: 100% !important;
         text-align: center !important;
         margin: 0 !important;
         padding: 30px 20px !important;
         min-height: auto;
     }
+}
+
+.carousel-indicators [data-bs-target]{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #C7C7C7;
+}
+
+.carousel-indicators [data-bs-target].active{
+    background-color: #397FF5;
+}
+
+.quote-box{
+    background-color: #F8F8F8;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.quote-box .quote-img{
+    border-radius: 50%;
+    border: 3px solid #0064D2;
+    height: 80px;
+    width: 80px;
+}
+
+.quote-header{
+    margin: 10px;
+}
+.quote-title{
+ font-weight: bold;
+}
+
+.quote-subtitle{
+    margin-top: 10px;
+}
+
+img.quotes{
+    content: url(./images/quotes.png);
+    width: 15px;
+    height: 15px;
+    margin: 0 10px 0 0;
+}
+
+.quote-body{
+    padding: 20px;
+}
+
+.card.quote{
+    border-radius: 0;
+    border: none;
+    background-color: #F8F8F8;
+}
+
+/**************** Entrada y salida de tecto ****************/
+
+input[type=text]{
+    border-radius: ;
+    
 }
