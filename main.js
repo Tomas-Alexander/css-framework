@@ -18,3 +18,22 @@ slidersArray.forEach(function(e, index) {
         sliderControls[index].classList.add("active");
     });
 });
+
+function validate(){
+    const areatext = document.querySelector("textarea").value.length;
+    const textcount = document.querySelector("#textcount");
+    textcount.innerHTML = areatext;
+}
+
+calendarPickers = document.querySelectorAll("input[type=date]");
+
+calendarPickers.forEach(
+    function(e){
+        e.setAttribute("type", "hidden");
+    }
+)
+
+const elem = document.querySelector('input[name="foo"]');
+const datepicker = new Datepicker(elem, {
+  // ...options
+}); 
