@@ -525,7 +525,7 @@
       title: '',
       todayBtn: false,
       todayBtnMode: 0,
-      todayHighlight: false,
+      todayHighlight: true,
       updateOnBlur: true,
       weekStart: 0,
     };

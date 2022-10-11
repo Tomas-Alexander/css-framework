@@ -993,11 +993,6 @@ option:hover{
     cursor: pointer;
   }
   
-  .datepicker-cell.focused:not(.selected) {
-    background-color: #e2e6ea;
-    border-radius: 50%;
-  }
-  
   .datepicker-cell.selected,
   .datepicker-cell.selected:hover {
     background-color: #0087FF;
@@ -1034,15 +1029,19 @@ option:hover{
   }
   
   .datepicker-cell.today:not(.selected) {
-    background-color: #20c997;
+    color: #000;
+    background-color: #e2e6ea;
+    border-radius: 50%;
   }
   
   .datepicker-cell.today:not(.selected):not(.disabled) {
-    color: #fff;
+    color: #000;
   }
   
   .datepicker-cell.today.focused:not(.selected) {
-    background-color: #1ebe8f;
+    color: #000;
+    background-color: #e2e6ea;
+    border-radius: 50%;
   }
   
   .datepicker-cell.range-end:not(.selected),
@@ -1082,8 +1081,8 @@ option:hover{
   }
   
   .datepicker-view.datepicker-grid .datepicker-cell {
-    height: 4.5rem;
-    line-height: 4.5rem;
+    height: 4rem;
+    line-height: 4rem;
   }
   
   .datepicker-input.in-edit {
