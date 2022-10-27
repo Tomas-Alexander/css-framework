@@ -1,3 +1,4 @@
+/* docs: https://mymth.github.io/vanillajs-datepicker/ */
 (function () {
     'use strict';
   

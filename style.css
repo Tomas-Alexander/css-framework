@@ -761,8 +761,9 @@ img.quotes{
 
 /**************** Entrada y salida de tecto ****************/
 
-input[type=text], 
+*:not(.input-group) input[type=text], 
 select,
+.form-select,
 textarea{
     border-radius: 3px !important;
 }
@@ -777,7 +778,7 @@ select:not([disabled]):not(:focus):hover{
 .was-validated select:invalid{
     background-color: #FFEEED;
     border-color: #EE2A24;
-    background-image: none;
+    /*background-image: none;*/
 }
 
 #text_count{
@@ -1093,3 +1094,96 @@ option:hover{
   .datepicker-input.in-edit:active {
     box-shadow: 0 0 0.25em 0.25em rgba(109, 168, 254, 0.2);
   }
+
+/*** Time Picker */
+
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+
+.custom-select select.form-select {
+    display: none; /*hide original SELECT element: */
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.form-select.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div{
+    padding: 15px;
+    border-bottom: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
+    border-left: 1px solid #ced4da;
+    border-collapse: collapse;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: #E5F1FC;
+}
+
+.input-group-number-buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group-number-buttons button{
+    padding: 0;
+    border: 1px solid;
+    border-collapse: collapse;
+    border-radius: 3px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-color: #E2E2E2;
+    height: 100%;
+    color: #B1B1B1;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.input-group-number-buttons button:nth-of-type(1){
+    border-bottom-left-radius: 0;
+    margin-bottom: -1px;
+}
+
+.input-group-number-buttons button:nth-of-type(2){
+    border-top-left-radius: 0;
+}
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-left: -1px;
+    border-radius: 3px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
